@@ -1,5 +1,5 @@
   window.onload = function () {
-    setTimeout(addVoiceRecognition, 100);
+    setTimeout(addVoiceRecognition, 1000);
   };
 
   function initVoiceRecognition() {
@@ -23,7 +23,7 @@
     // Insert meta area
     var parentNode = document.querySelector('#meta-contents');
     if (!parentNode) {
-      setTimeout(addVoiceRecognition, 100);
+      setTimeout(addVoiceRecognition, 500);
       return;
     }
     var refNode = parentNode.childNodes[0];
