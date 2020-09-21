@@ -56,8 +56,7 @@
     };
 
     function restart(isForce) {
-      (isForce ? voiceRecog.abort : voiceRecog.stop)();
-      voiceRecog = initVoiceRecognition();
+      isForce && voiceRecog.abort();
       voiceRecog.start();
     }
     voiceRecog.onend = function () { restart(false); };
